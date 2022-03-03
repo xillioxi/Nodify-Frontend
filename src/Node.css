@@ -1,0 +1,103 @@
+@font-face{
+    font-family:'Roboto-Mono-Light';
+    src: url('assets/fonts/Roboto-Mono/RobotoMono-Light.ttf');
+}
+
+#Node_Container{
+    position:absolute;
+    width: 300px;
+    left: 0px;
+    top: 0px;
+    font-family:"Roboto-Mono-Light";
+    background:#f2f2f2;
+    border-radius: 50px;
+    padding:30px;
+}
+
+#Node_Container textarea{
+    font-family:"Roboto-Mono-Light";
+    display: inline;
+    border:none;
+    width: 100%;
+    height:inherit;
+    overflow:hidden;
+    box-sizing: border-box ;
+    height:100%;
+    resize:vertical;
+}
+
+
+#Node_Container:hover{
+    filter: drop-shadow(0px 0px 7px #2293fc)
+}
+
+#Application_Node{
+    position:absolute;
+    width: 300px;
+    top:0px;
+    left:0px;
+    font-family:"Roboto-Mono-Light";
+    background:#f2f2f2;
+    border-radius: 10px;
+    border:2px solid red;
+}
+
+#Application_Node h3{
+    margin-left:30px;
+}
+
+
+#Application_Node button{
+    position:absolute;
+    height:5px;
+    width:5px;
+}
+
+#Application_Node:hover{
+    filter: drop-shadow(0px 0px 7px #2293fc)
+}
+
+.Output{
+    top:calc(75px);
+    left:calc(290px);
+}
+
+.File{
+    top:calc(75px);
+    left:calc(-15px);
+}
+
+.Option{
+    top:calc(120px);
+    left:calc(-15px);
+}
+
+#column_selection h5{
+    display:inline-block;
+    margin:15px;
+}
+
+#column_selection{
+    display:block;
+    width:100%;
+}
+
+.column_selection_outputs{
+    float:right;
+}
+
+#column_selection_inputs{
+    float:left;
+}
+
+.Input-File{
+    position:absolute;
+    top:calc(75px);
+    left:calc(-10px);
+}
+
+.Output-File{
+    position:absolute;
+    top:calc(75px);
+    left:calc(348px);
+}

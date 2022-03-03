@@ -1,0 +1,81 @@
+#PipelineToolBar{
+    height:100%;
+    background-color: #B2E1F0;
+    position:absolute;
+    display:block;
+    font-family:"Roboto-Mono-Light";
+}
+
+#PipelineToolBar h1{
+    font-size:50px;
+    display:block;
+    width: calc(100%-20px);
+    overflow:hidden;
+    padding-left:20px;
+}
+
+#PipelineToolBar .Pipeline{
+    position:initial;
+    border:none;
+    border-radius: 0px;
+    font-family:inherit;
+    width:100%;
+    font-size:25px;
+    padding:0px;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:transparent;
+    overflow:hidden;
+}
+
+#Closebtn{
+    position:absolute;
+    top:10px;
+    left:calc(100%);
+    background-color:#B2E1F0;
+    border:none;
+    font-size:35px;
+    border-radius:0px 10px 10px 0px; 
+    
+}
+
+.PipelineToolBar__close{
+    width:0px;
+    animation-name:closePipelineToolBar;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.PipelineToolBar__open{
+    width:400px;
+    animation-name:openPipelineToolBar;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes closePipelineToolBar { 
+    from {width:350px};
+    to {width:400px};
+}
+
+@keyframes openPipelineToolBar {
+    from {width:0px};
+    to {width:400px};
+}
+
+
+.stopped{
+    background-color:red !important;
+  }
+  
+  .running{
+    background-color:green !important;
+  }
+
+  .paused{
+      background-color:orange !important;
+  }
+  
+  .default{
+    background-color:transparent;
+  }
